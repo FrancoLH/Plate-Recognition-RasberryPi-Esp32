@@ -1,4 +1,4 @@
-/* Define crystal frequency before including xc.h so delay macros work */
+
 #define _XTAL_FREQ 4000000
 #include <xc.h>
 #define __delay_ms(x) 
