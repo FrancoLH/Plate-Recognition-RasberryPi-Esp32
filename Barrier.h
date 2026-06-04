@@ -1,8 +1,8 @@
-#pragma config FOSC  = XT      
+#pragma config FOSC  = INTOSCIO      
 #pragma config WDTE  = OFF    
-#pragma config PWRTE = ON      
-#pragma config MCLRE = ON      
-#pragma config BOREN = ON      
+#pragma config PWRTE = OFF      
+#pragma config MCLRE = OFF      
+#pragma config BOREN = OFF      
 #pragma config LVP   = OFF     
 #pragma config CPD   = OFF     
 #pragma config CP    = OFF     
@@ -13,7 +13,7 @@
 char mi_letra = 'A';
 
 void main(void) {
-    CMCON = 0x07;
+    CMCON = 7;
     TRISB0 = 0;    
     TRISB1 = 1;   
     TRISB2 = 0;    
