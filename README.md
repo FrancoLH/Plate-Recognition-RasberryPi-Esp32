@@ -1,6 +1,6 @@
 # Plate Recognition Access Control System
 
-Embedded AI-based vehicle license plate recognition and automated barrier control system using YOLO, Raspberry Pi, and PIC16F628A.
+Embedded AI-based vehicle license plate recognition and automated barrier control system using YOLO, Raspberry Pi, and ESP32.
 
 ## Overview
 
@@ -26,9 +26,9 @@ Using a camera, the system captures images of incoming vehicles and processes th
 
 ### Stage 2: Barrier Control System
 
-The second stage focuses on implementing the access control hardware using a PIC16F628A microcontroller.
+The second stage focuses on implementing the access control hardware using a ESP32 microcontroller.
 
-The microcontroller is responsible for controlling the barrier mechanism, managing vehicle detection sensors, and ensuring safe operation of the system. Once authorization is received from the Raspberry Pi, the PIC executes the access sequence and controls the opening and closing of the barrier.
+The microcontroller is responsible for controlling the barrier mechanism, managing vehicle detection sensors, and ensuring safe operation of the system. Once authorization is received from the Raspberry Pi, the ESP32 executes the access sequence and controls the opening and closing of the barrier.
 
 #### Main Features
 
@@ -50,7 +50,7 @@ The microcontroller is responsible for controlling the barrier mechanism, managi
 ### Hardware
 
 - Raspberry Pi
-- PIC16F628A
+- ESP32
 - Camera module
 - Vehicle detection sensors
 - Barrier motor and driver circuitry
@@ -69,7 +69,7 @@ The current implementation represents a functional prototype of an intelligent v
 ### Planned Improvements
 
 * **Parking Occupancy Display**
-  Integration of an LCD display at the parking entrance to indicate the number of available parking spaces in real time. This feature would provide drivers with immediate information about parking availability before entering the facility.
+  Integration of a display screen at the parking entrance showing the number of available parking spaces in real time. This feature would provide drivers with immediate information about parking availability before entering the facility.
 
 * Web-based monitoring and management interface.
 
